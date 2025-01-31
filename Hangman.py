@@ -28,7 +28,7 @@ def checkinput1(userguess):
     global lives, correct
     if len(userguess) == 1:  # Single letter guess
         if userguess in randomword:
-            print(userguess, "is correct!")
+            print(userguess, "is in the word!")
             correct.add(userguess)  # Store unique letters only
         else:
             print(userguess, "is not in the word")
