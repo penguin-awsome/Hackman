@@ -76,7 +76,7 @@ while lives > 0:  # Only continue if lives are above 0
     if checkinput1(userguess):
         uans4 = input("do you want to play again? | yes/no ").lower()
         if 'yes' in uans4:
-            correct = []
+            correct = set()
             print("you think you can win again? good luck!")
             time.sleep(0.2)
             generateword()
@@ -98,7 +98,7 @@ while lives > 0:  # Only continue if lives are above 0
         print("The word was:", word)
         uans4 = input("do you want to play again? | yes/no ").lower()
         if 'yes' in uans4:
-            correct = []
+            correct = set()
             print("you'll get it this time! ")
             time.sleep(0.2)
             generateword()
